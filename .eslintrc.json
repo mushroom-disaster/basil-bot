@@ -4,8 +4,17 @@
 		"node": true,
 		"es6": true
 	},
+	"parser": "@babel/eslint-parser",
 	"parserOptions": {
-		"ecmaVersion": 2021
+		"ecmaVersion": "latest",
+		"sourceType": "module",
+		"requireConfigFile": false,
+		"allowImportExportEverywhere": true,
+		"babelOptions": {
+			"plugins": [
+			  "@babel/plugin-syntax-import-assertions"
+			]
+		  }
 	},
 	"rules": {
 		"arrow-spacing": ["warn", { "before": true, "after": true }],

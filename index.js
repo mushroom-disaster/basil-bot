@@ -1,5 +1,5 @@
-const { Client, Events, GatewayIntentBits } = require('discord.js');
-const { token } = require('./config.json');
+import { Client, Events, GatewayIntentBits } from 'discord.js';
+import config from './config.json' assert { type: "json" };
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
@@ -7,4 +7,4 @@ client.once(Events.ClientReady, c => {
 	console.log(`Ready! Logged in as ${c.user.tag}`);
 });
 
-client.login(token);
+client.login(config.token);
