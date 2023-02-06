@@ -5,6 +5,6 @@ To set up:
 - Install Node.js (I use v18)
 - Clone the repository
 - Run `npm install`
-- Rename config.json.example to config.json and fill in the missing values
+- Copy config.json.example and rename the copy to config.json and fill in the missing values
 
 That's it!
