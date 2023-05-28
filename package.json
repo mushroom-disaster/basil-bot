@@ -16,10 +16,10 @@
     "sqlite3": "^5.1.6"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.19.1",
+    "@babel/eslint-parser": "^7.21.8",
     "@babel/plugin-syntax-import-assertions": "^7.20.0",
-    "eslint": "^8.33.0",
-    "nodemon": "^2.0.20"
+    "eslint": "^8.41.0",
+    "nodemon": "^2.0.22"
   },
   "type": "module"
 }
