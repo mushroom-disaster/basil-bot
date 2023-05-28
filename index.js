@@ -9,7 +9,7 @@ client.commands = new Collection();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const commandsPath = path.join(__dirname, 'commands');
+const commandsPath = path.join(__dirname, 'lib/commands');
 const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('.js'));
 
 for (const file of commandFiles) {
@@ -23,7 +23,7 @@ for (const file of commandFiles) {
 	}
 }
 
-const eventsPath = path.join(__dirname, 'events');
+const eventsPath = path.join(__dirname, 'lib/events');
 const eventFiles = fs.readdirSync(eventsPath).filter(file => file.endsWith('.js'));
 
 for (const file of eventFiles) {

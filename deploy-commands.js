@@ -3,10 +3,10 @@ import config from './config.json' assert { type: "json" };
 import * as fs from 'node:fs';
 
 const commands = [];
-const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
+const commandFiles = fs.readdirSync('./lib/commands').filter(file => file.endsWith('.js'));
 
 for (const file of commandFiles) {
-	const command = (await import(`./commands/${file}`)).default;
+	const command = (await import(`./lib/commands/${file}`)).default;
 	commands.push(command.data.toJSON());
 }
 
